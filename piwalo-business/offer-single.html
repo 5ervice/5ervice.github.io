@@ -267,18 +267,39 @@
             </dl>
 
           </section>
-
           <aside class="mv4 f7 f6-ns fw7 w-100 sans-serif">
-            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
-              <i data-feather="plus" class="v-mid"></i> Join
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
+              <i data-feather="check" class="v-mid"></i> Joined
             </a>
-            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2 pointer" onclick="shareView();">
               <i data-feather="star" class="v-mid"></i> Interested
             </a>
-            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="https://raw.githubusercontent.com/lorcanblake/etta/master/src/css/etta.min.css">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2 pointer" onclick="commentsView();">
               <i data-feather="message-square" class="v-mid"></i> Comment
             </a>
           </aside>
+          <div id="comment-box" class="measure mb3 f6 f5-ns sans-serif dn">
+            <label for="comment" class="b dib mb2">Comment</label> <span class="normal black-60">(min. 180 characters)</span>
+            <textarea rows="5" class="serif fw1 resize-v input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure b"></textarea>
+          </div>
+          <div id="share-box" class="measure mb3 f6 f5-ns sans-serif dn">
+              <label for="comment" class="b dib mb2">Share via:</label>
+              <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
+                <i data-feather="facebook" class="v-mid"></i> Facebook
+              </a>
+              <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
+                <i data-feather="twitter" class="v-mid"></i> Twitter
+              </a>
+              <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
+                <i data-feather="instagram" class="v-mid"></i> Instagram
+              </a>
+              <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
+                <i data-feather="linkedin" class="v-mid"></i> Linkedin
+              </a>
+              <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
+                <i data-feather="check" class="v-mid"></i> Email
+              </a>
+            </div>
         </div>
       </article>
 
@@ -432,17 +453,19 @@
   </main>
 
   <div etta-include="footer.html"></div>
+
   <script src="../etta/js/e-include.js"></script>
   <script src="../etta/js/e-nav-active.js"></script>
   <script src="../etta/js/e-scroll.js"></script>
   <script src="../etta/js/e-filter-active.js"></script>
-  <script src="../etta/js/e-offer-single-panel.js"></script>
+  <script src="../etta/js/siema.min.js"></script>
+  <script src="../etta/js/e-panel.js"></script>
   <script src="../etta/js/e-side-nav.js"></script>
   <script src="../etta/js/icons.min.js"></script>
-  <script src="../etta/js/siema.min.js"></script>
   <script>
-    injectComponents();
     new Siema();
+    injectComponents();
+    
   </script>
 <script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script></body>
 
