@@ -10,49 +10,6 @@
 <style>
     @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
 
-    .select-reset {
-        padding: 0;
-        margin: 0 auto;
-        border: 1px solid transparent;
-        border-radius: 3px;
-        overflow: hidden;
-        background-color: #fff;
-        background: #fff;
-        position: relative;
-    }
-
-    .select-reset:after {
-        top: 50%;
-        left: 85%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border-color: rgba(0, 0, 0, 0);
-        border-top-color: #000000;
-        border-width: 5px;
-        margin-top: -2px;
-        z-index: 100;
-    }
-
-    .select-reset select {
-        padding: 5px 8px;
-        width: 100%;
-        border: none;
-        box-shadow: none;
-        background-color: transparent;
-        background-image: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        font-weight: 600;
-    }
-
-    .select-reset select:focus {
-        outline: none;
-    }
 </style>
 
 <body class="w-100 border-box sans-serif navy overflow-x-hidden">
@@ -64,57 +21,27 @@
             <div class="mw9 center">
 
                 <section class="cf">
-                    <!-- <div class="select-reset navy fw6 mw5 center tc f5 f3-ns pb1 bb bw2 b--pink">
-                    <select class="navy lh-copy">
-                        <option value="volvo">Recommended for you</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </select>
-                </div> -->
-                    <!-- <span class="db mt2-ns mw4 center ba bw1 b--pink"></span> -->
-                    <!-- <p class="f6 f5-ns measure lh-copy mt0 serif tc-l center-l">Copy goes here.</p> -->
 
-                    <!-- <h3 class="f5 f3-ns mt0 pt5 pt4-ns pb2 tc lh-copy">
-                        <span class="pb1 bb bw2 b--pink">Vendor Name</span>
-                    </h3> -->
+                    <article class="mw6 center bg-white br3 pa3 pa4-ns mt5 mb3 bn ba-ns b--black-20">
+                        <div class="tc">
+                            <img src="../etta/assets/vendor-avatar.png" class="br-100 h3 w3 dib" title="Photo of a kitty staring at you">
+                            <h1 class="f4">The Crafty Fox</h1>
+                            <hr class="mw3 ba bw1 b--pink">
+                        </div>
+                        <p class="lh-copy measure center f6 black-70">
+                            The Crafty Fox is an award winning Fabric Crafts and Haberdashery supplier based in Drogheda, Co. Louth.
+                            Experience a crafters dream with The Crafty Fox.
+                        </p>
+                        <aside class="measure center tc f6">
+                            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" onclick="shareView();">
+                                <i data-feather="plus" class="v-mid"></i> Follow
+                            </a>
+                            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="pitch.html">
+                                <i data-feather="feather" class="v-mid"></i> New Pitch..
+                            </a>
+                        </aside>
+                    </article>
 
-                    <div class="tc pa4 pb3">
-                        <img src="../etta/assets/vendor-avatar.png" class="db center br-100 bg-black-20 shadow pa0 h3 w3 h4-l w4-l mb3" alt="avatar">
-
-                        <h3 class="f5 f3-ns mt0 pt3 pb2 tc lh-copy">
-                            <span class="pb1 bb bw2 b--pink">Vendor Name</span>
-                        </h3>
-
-                        <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" onclick="shareView();">
-                            <i data-feather="plus" class="v-mid"></i> Follow
-                        </a>
-                        <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="pitch.html">
-                            <i data-feather="feather" class="v-mid"></i> New Pitch..
-                        </a>
-                        <!-- <div id="comment-box" class="measure center mv3 f6 f5-ns sans-serif dn">
-                            <label for="comment" class="b dib mb2">What's your idea?</label>
-                            <span class="normal black-60">(min. 180 characters)</span>
-                            <textarea rows="5" class="serif fw1 resize-v input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure b"></textarea>
-                        </div> -->
-
-
-                    </div>
-
-
-                    <!-- <section class="tc center" id="filter">
-                    <div class="f7 f6-ns cf dib mb4 tc mt2 sans-serif">
-                        <a class="fl link bb bt bl pa2 ph3-ns dib near-white bg-navy b--navy br2 br--left bl border-box" href="#">
-                            <i data-feather="filter" class="pa0 ma0 w1 h1 v-mid"></i> 
-                            All </a>
-                        <a class="fl bg-white hover-bg-navy hover-white b--navy link ba pa2 ph3-l dib navy" href="#">
-                            Offers </a>
-                        <a class="fl  bg-white hover-bg-navy hover-white b--navy link bt bb br pa2 ph3-l dib navy" href="#">
-                            Services </a>
-                        <a class="fl  bg-white hover-bg-navy hover-white b--navy link bb bt pa2 ph3-l dib navy br2 br--right br" href="">
-                            Pitches </a>
-                    </div>
-                </section> -->
 
                     <section class="tc mw6-l center" id="filter">
                         <div class="f7 f4-m f6-l cf dib mb4 tc mt2 sans-serif">
