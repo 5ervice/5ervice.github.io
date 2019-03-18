@@ -13,7 +13,8 @@
 
 <body class="w-100 border-box sans-serif navy overflow-x-hidden">
 
-    <div etta-include="prim-nav.html"></div>
+<nav id="prim-nav" class="z-5 db dt-l w-100 pa2 pa3-ns ph5-l bb bt b--black-10 fixed bg-white shadow border-box"
+    etta-include="prim-nav.html"></nav>
 
     <main id="main" onclick="closeNav()">
         <article class="w-100 bt b--black-10 bg-white navy ph3 ph5-ns pv4 pv5-ns fade">
@@ -24,7 +25,7 @@
                         <span class="pb1 bb bw2 b--pink">Category name</span>
                     </h3>
 
-                    <div etta-include="filter-feed.html"></div>
+                    <section class="tc mw6-l center" id="filter" etta-include="filter-feed.html"></section>
 
                     <div etta-include="panels-feed.html"></div>
 
