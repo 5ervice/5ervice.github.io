@@ -75,10 +75,24 @@
     </div>
   </section>
 
+  <nav id="notif"
+    class="z-5 bottom-0 db w-100 pa2 pa3-ns ph5-l bb bt b--black-10 fixed bg-white shadow border-box">
+    <span class="db dtc-l v-mid mid-gray link w-25-l tc mb2" href="index.html" title="Home">
+  
+      Piwalo requires your location to work! <a class="navy" href="faq.html">Learn more here</a>.
+  
+      <a class="shadow f7 f6-ns fw7 no-underline grow db dib-ns v-mid bg-navy white ba b--black-60 br-pill ph2 ph4-ns pv2 mb3"
+        onclick="dismiss();">
+        Accept and close
+      </a>
+    </span>
+  </nav>
+
   <div etta-include="footer.html"></div>
   <script src="../etta/js/e-include.js"></script>
   <!-- <script src="../etta/js/e-side-nav.js"></script> -->
   <script src="../etta/js/icons.min.js"></script>
+  <script src="../etta/js/e-dismiss-notification.js"></script>
   <script>
     injectComponents();
   </script>
