@@ -17,7 +17,7 @@
 <nav id="prim-nav" class="ma0 z-5 db dt-l w-100 pa2 pa3-ns ph5-l bb bt b--black-10 fixed bg-white shadow border-box"
     etta-include="prim-nav.html"></nav>
 
-    <main id="main" onclick="closeNav()">
+    <main id="main">
         <article class="w-100 bt b--black-10 bg-white navy ph3 ph5-ns pv4 pv5-ns fade">
             <div class="mw9 center">
 
@@ -33,8 +33,11 @@
                             The Crafty Fox is an award winning Fabric Crafts and Haberdashery supplier based in Co. Tipperary.
                         </p>
                         <aside class="measure center tc f6">
-                            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" onclick="shareView();">
+                            <a id="follow" class="tc bb--w2 no-underline w-auto dim v-mid navy ba br2 ph3 pv2 mv2 dib" onclick="select();">
                                 <i data-feather="plus" class="v-mid"></i> Follow
+                            </a>
+                            <a id="following" class="tc i bb--w2 no-underline w-auto dim v-mid navy ba br2 ph3 pv2 mv2 dn" onclick="select();">
+                                    <i data-feather="check" class="v-mid"></i> Following
                             </a>
                             <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" href="pitch.html">
                                 <i data-feather="feather" class="v-mid"></i> New Pitch..
@@ -42,10 +45,12 @@
                         </aside>
                     </article>
 
+                  
                     <section class="tc mw6-l center" id="filter" etta-include="filter-feed.html"></section>
 
-                    <div etta-include="panels-feed.html"></div>
-
+                    <div id="feed-all" class="fade" etta-include="panels-feed.html"></div>
+                    <div id="feed-offers" class="dn fade" etta-include="panels-feed-offers.html"></div>
+                    <div id="feed-pitches" class="dn fade" etta-include="panels-feed-pitches.html"></div>
                   
                 </section>
 
@@ -56,7 +61,9 @@
 
     <script src="../etta/js/e-include.js"></script>
     <script src="../etta/js/e-scroll.js"></script>
+    <script src="../etta/js/e-filter-feed.js"></script>
     <script src="../etta/js/e-filter-active.js"></script>
+    <script src="../etta/js/e-follow.js"></script>
     <script src="../etta/js/e-side-nav.js"></script>
     <script src="../etta/js/icons.min.js"></script>
     <script src="../etta/js/e-nav-active.js"></script>
