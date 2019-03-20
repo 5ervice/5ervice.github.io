@@ -7,7 +7,7 @@ function injectComponents() {
     /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("etta-include");
     fullPath = "../etta/components/" + file;
-    console.log(fullPath);
+    // console.log(fullPath);
     if (file) {
       /*make an HTTP request using the attribute value as the file name:*/
       xhttp = new XMLHttpRequest();
