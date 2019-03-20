@@ -1,4 +1,4 @@
-var filter = document.getElementsByClassName("filter");
+var filter = document.getElementById("filter");
 var btns = filter.getElementsByTagName("a");
 console.log(btns.length);
 for (var i = 0; i < btns.length; i++) {
