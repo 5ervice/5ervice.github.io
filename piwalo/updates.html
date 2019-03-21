@@ -22,8 +22,32 @@
       <h3 class="f5 f3-ns mt0 pt3 pt4-ns pb2 tc lh-copy">
         <span class="pb1 bb bw2 b--pink">Updates</span>
       </h3>
-      
+
       <section class="tc mw6-l center" id="filter" etta-include="filter-updates.html"></section>
+
+      <article id="notif" class="center mw6 hidden ba b--black-20 br1 mv4">
+        <h1 class="f4 bg-black-05 mv0 pv2 ph3 tc lh-copy">
+          <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked blue ba">Open Call</div>
+        </h1>
+        <div class="pa3 bt b--black-20">
+          <h1 class="db f5 f4-ns mb2 lh-copy">
+            <a href="vendor-single.html" class="fw9 link navy bb bw2 b--blue">Vendor name</a> are looking for your help!
+          </h1>
+          <p class="serif f6 f5-ns lh-copy measure mv2">
+            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+          </p>
+          <aside class="center mt3 mb2">
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba b--navy br2 ph3 pv2 mv2" href="pitch.html">
+              I've got an idea!
+              <i data-feather="chevron-right" class="v-mid"></i>
+            </a>
+            <a class="tc bb--w2 no-underline w-auto dim dib v-mid black-50 bn b--navy br2 ph3 pv2 mv2" onclick="dismiss();">
+              Dismiss
+            </a>
+          </aside>
+        </div>
+      </article>
 
       <section id="updates-all" class="fade" etta-include="updates-all.html"></section>
       <section id="updates-tasks" class="dn fade" etta-include="updates-tasks.html"></section>
@@ -32,7 +56,8 @@
 
   </section>
 
-  <div etta-include="footer.html"></div>
+  <footer class="bg-white navy ph3 ph5-ns pv5 pv6-ns bt b--black-10" etta-include="footer.html"></footer>
+  
   <script src="../etta/js/e-include.js"></script>
   <script src="../etta/js/e-nav-active.js"></script>
   <script src="../etta/js/e-dismiss-notification.js"></script>
