@@ -1,17 +1,28 @@
-var f = document.getElementById("feed-all");
-var o = document.getElementById("feed-offers");
+var a = document.getElementById("feed-all");
 var p = document.getElementById("feed-pitches");
+var o = document.getElementById("feed-offers");
+var f = document.getElementById("feed-funds");
 
 // var c = document.getElementById("comment-box");
 // var s = document.getElementById("share-box");
 
 
 function showAll(){
-    f.classList.remove("dn");
-    f.classList.add("db");
+    a.classList.remove("dn");
+    a.classList.add("db");
 
-    hideOffers();
     hidePitches();
+    hideOffers();
+    hideFunds();
+}
+
+function showPitches(){
+    p.classList.remove("dn");
+    p.classList.add("db");
+
+    hideAll();
+    hideOffers();
+    hideFunds();
 }
 
 function showOffers(){
@@ -20,19 +31,26 @@ function showOffers(){
 
     hideAll();
     hidePitches();
+    hideFunds();
 }
 
-function showPitches(){
-    p.classList.remove("dn");
-    p.classList.add("db");
+function showFunds(){
+    f.classList.remove("dn");
+    f.classList.add("db");
 
-    hideOffers();
     hideAll();
+    hidePitches();
+    hideOffers();
 }
 
 function hideAll(){
-    f.classList.remove("db");
-    f.classList.add("dn");
+    a.classList.remove("db");
+    a.classList.add("dn");
+}
+
+function hidePitches(){
+    p.classList.remove("db");
+    p.classList.add("dn");
 }
 
 function hideOffers(){
@@ -40,7 +58,7 @@ function hideOffers(){
     o.classList.add("dn");
 }
 
-function hidePitches(){
-    p.classList.remove("db");
-    p.classList.add("dn");
+function hideFunds(){
+    f.classList.remove("db");
+    f.classList.add("dn");
 }
