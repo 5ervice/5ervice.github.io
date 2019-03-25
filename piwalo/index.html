@@ -75,17 +75,7 @@
     </div>
   </section>
 
-  <nav id="notif"
-    class="w-100 mw6-ns center z-5 bottom-0 right-0 mb2-ns mr2-ns db pa2 pa3-ns ph4-l bb bt b--black-10 fixed bg-white shadow border-box">
-    <span class="f7 f6-ns db dtc-l v-mid mid-gray link w-25-l tc mv3">
-      Piwalo requires access your location. <a class="navy" href="faq.html">Learn more here</a>.
-    </span>
-
-    <a class="tc shadow f7 f6-ns fw7 no-underline grow db v-mid bg-navy white ba b--black-60 br-pill ph2 ph4-ns pv2 mv3 w5 center"
-        onclick="dismiss();">
-        Accept and close
-      </a>
-  </nav>
+  <nav id="notif" onclick="dismiss();" etta-include="modal--permission.html"></nav>
 
   <footer class="bg-white navy ph3 ph5-ns pv5 pv6-ns bt b--black-10" etta-include="footer.html"></footer>
   <script src="../etta/js/e-include.js"></script>
