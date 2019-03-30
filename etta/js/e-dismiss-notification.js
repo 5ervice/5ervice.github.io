@@ -10,7 +10,7 @@ function dismiss(){
   
   setTimeout(function () {
     notif.remove();
-}, 600);
+}, 500);
   
 }
 

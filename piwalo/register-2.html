@@ -32,10 +32,10 @@
             <legend class="ph0 mh0 fw6 clip">Register Step 2: Account Preferences</legend>
             <div class="measure mb3 f6 f5-ns">
               <label for="name" class="b db mb2">Name
-                <span class="normal black-60">(optional)</span>
+                <span class="normal black-60"></span>
               </label>
               <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text" aria-describedby="name-desc"
-                placeholder="First or full name">
+                placeholder="Full name">
               <span id="name-desc" class="f6 tl black-70 db mv3 lh-copy">Some people like to be recognised for their ideas, others don't. You'll be known as Anonymous if you leave
                 this blank.</span>
             </div>
@@ -49,9 +49,41 @@
             <div class="measure mb3 f6 f5-ns">
               <label for="location" class="b db mb2">Location</label>
               <input class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text" placeholder="Set your location"
-                value="Use current location" name="location" id="location" required>
+                value="Use current location or type address" name="location" id="location" required>
               <span id="location-desc" class="f6 tl black-70 db mv3 lh-copy">We ask for access to your location so that can that you only see offers relevant to your area. </a>
               </span>
+            </div>
+            <div class="measure mb3 f6 f5-ns">
+              <label for="name" class="b db mb2">Privacy
+                <span class="normal black-60"></span>
+              </label>
+
+                  <div class="flex justify-center dt border-box w-100">
+                      <fieldset id="tier" class="bn ml0 pl0">
+                        <!-- <legend class="fw7 mb2">Favorite Movies</legend> -->
+                        <div class="flex items-center ma2">
+                          <input class="ma2" type="radio" name="mode" id="open" value="open" checked="checked">
+                          <label for="open" class="lh-copy">
+                            <a
+                            class="f7 f6-ns fw7 no-underline dib dtc v-mid navy ba b--black-60 br1 pa3 pa4-ns mb3 w-50 mr2 tc ttu">
+                            <span class="center tc">
+                              <i data-feather="smile" class="f6 f5-ns db v-mid center mb3"></i> Open</span>
+                          </a>
+                          </label>
+                        
+                          <input class="ma2" type="radio" name="mode"  id="private" value="private">
+                          <label for="private" class="lh-copy">
+                              <a
+                              class="f7 f6-ns fw7 no-underline dib dtc v-mid navy ba b--black-60 br1 pa3 pa4-ns mb3 w-50 mr2 tc ttu">
+                              <span class="center tc">
+                                <i data-feather="lock" class="f6 f5-ns db v-mid center mb3"></i> Private </span>
+                            </a>
+                          </label>
+                        </div>
+                      </fieldset>
+              </div>
+              <span id="privacy-desc" class="f6 tl black-70 db mv3 lh-copy">Some people like to be recognised for their ideas, others don't. You'll be known as Anonymous if you leave
+                this blank.</span>
             </div>
             <div class="measure mb3 f6 f5-ns">
               <label for="location-radius" class="b db mb2">Location radius</label>
