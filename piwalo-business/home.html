@@ -27,6 +27,12 @@
     <main id="main" onclick="closeNav()">
       <section class="ph3 ph5-l dt w-100 vh-100 pv3 fade">
         <div class="dtc v-mid tc mv4 pv4 ph3 mw9 center">
+
+            <!-- <aside class="mv4"> -->
+                <section class="tc mw6-l center" id="filter" etta-include="filter-stats.html"></section>
+            <!-- </aside> -->
+
+          <!-- mw9 center ba br2 min-vh-100 cf -->
           <div class="pv4-l mt4">
             <div class="flex items-start justify-between-l dt border-box w-100">
                 <a
@@ -86,14 +92,14 @@
           </div>
 
           <article
-            class="pa3 pa5-ns tl v-mid navy ba b--black-60 br1 shadow mb5"
-            data-name="slab-stat-large"
+            class="pa3 pa5-ns tl v-mid navy ba b--black-60 br2 mb5"
+            data-name="vendor-stat-today"
           >
             <h3 class="f6 ttu tracked bn bw2 b--pink">Today</h3>
             <div class="cf">
-                <dd class="f5 lh-copy ml0 mt0-ns mb3 w-100 w-50-m w-30-l">
+                <dd class="f5 lh-copy ml0 mt0-ns mb3 w-100 w-30-l dib">
                     <form class="pv2">
-                      <fieldset id="tier" class="bn ml0 pl0 shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba br1 pa2 pa4-ns mb3">
+                      <fieldset id="tier" class="ml0 pl0 shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba b--black-60 br1 pa2 pa4-ns mb3">
                         <!-- <legend class="fw7 mb2">Favorite Movies</legend> -->
                         <div class="flex items-center mb2">
                           <input class="mr2" type="radio" id="tier-1" value="tier-1" disabled="">
@@ -123,6 +129,71 @@
                       </fieldset>
                     </form>
                   </dd>
+                  <dd class="f5 lh-copy ml0 mt0-ns mb3 w-100 w-30-l dib">
+                      <form class="pv2">
+                        <fieldset id="tier" class="ml0 pl0 shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba b--black-60 br1 pa2 pa4-ns mb3">
+                          <!-- <legend class="fw7 mb2">Favorite Movies</legend> -->
+                          <div class="flex items-center mb2">
+                            <input class="mr2" type="radio" id="tier-1" value="tier-1" disabled="">
+                            <label for="tier-1" class="lh-copy"><span class="b">10 people</span> - €15 per person</label>
+                          </div>
+                          <aside class="mr4 mw6-l">
+                            <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                              <div class="bg-pink br-pill h1 shadow-1 w-100"></div>
+                            </div>
+                          </aside>
+                          <div class="flex items-center mb2">
+                            <input class="mr2" type="radio" id="tier-2" value="tier-2" checked="">
+                            <label for="tier-2" class="lh-copy"><span class="b">20 people</span> - €10 per person</label>
+                          </div>
+                          <aside class="mr4 mw6-l">
+                            <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                              <div class="bg-pink br-pill h1 shadow-1 w-75"></div>
+                            </div>
+                          </aside>
+                          <div class="flex items-center mb2">
+                            <input class="mr2" type="radio" id="tier-3" value="tier-3" disabled="">
+                            <label for="tier-3" class="lh-copy"><span class="b">30 people</span> - €8 per person</label>
+                          </div>
+                          <aside class="mr4 mw6-l">
+                            <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">                    </div>
+                          </aside>
+                        </fieldset>
+                      </form>
+                    </dd>
+                    <dd class="f5 lh-copy ml0 mt0-ns mb3 w-100 w-30-l dib">
+                        <form class="pv2">
+                          <fieldset id="tier" class="ml0 pl0 shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba b--black-60 br1 pa2 pa4-ns mb3">
+                            <!-- <legend class="fw7 mb2">Favorite Movies</legend> -->
+                            <div class="flex items-center mb2">
+                              <input class="mr2" type="radio" id="tier-1" value="tier-1" disabled="">
+                              <label for="tier-1" class="lh-copy"><span class="b">10 people</span> - €15 per person</label>
+                            </div>
+                            <aside class="mr4 mw6-l">
+                              <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                                <div class="bg-pink br-pill h1 shadow-1 w-100"></div>
+                              </div>
+                            </aside>
+                            <div class="flex items-center mb2">
+                              <input class="mr2" type="radio" id="tier-2" value="tier-2" checked="">
+                              <label for="tier-2" class="lh-copy"><span class="b">20 people</span> - €10 per person</label>
+                            </div>
+                            <aside class="mr4 mw6-l">
+                              <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                                <div class="bg-pink br-pill h1 shadow-1 w-75"></div>
+                              </div>
+                            </aside>
+                            <div class="flex items-center mb2">
+                              <input class="mr2" type="radio" id="tier-3" value="tier-3" disabled="">
+                              <label for="tier-3" class="lh-copy"><span class="b">30 people</span> - €8 per person</label>
+                            </div>
+                            <aside class="mr4 mw6-l">
+                              <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">                    </div>
+                            </aside>
+                          </fieldset>
+                        </form>
+                      </dd>
+                     
               <dl class="db dib-l w-auto-l lh-title mr6-l">
                 <dd class="f6 fw4 ml0">Offers Running</dd>
                 <dd class="f2 f-subheadline-l fw6 ml0">
@@ -240,12 +311,16 @@
       </section>
       <footer class="bg-white navy ph3 ph5-ns pv5 pv6-ns bt b--black-10" etta-include="footer.html"></footer>
     </main>
+    </body>
 
     <script src="../etta/js/e-include.js"></script>
+    <script src="../etta/js/e-scroll.js"></script>
+    <script src="../etta/js/e-filter-active.js"></script>
     <script src="../etta/js/e-nav-active.js"></script>
     <script src="../etta/js/e-side-nav.js"></script>
     <script src="../etta/js/icons.min.js"></script>
     <script>
       injectComponents();
     </script>
-  <script src="//instant.page/1.2.1" type="module" integrity="sha384-/IkE5iZAM/RxPto8B0nvKlMzIyCWtYocF01PbGGp1qElJuxv9J4whdWBRtzZltWn"></script></html>
+  <script src="//instant.page/1.2.1" type="module" integrity="sha384-/IkE5iZAM/RxPto8B0nvKlMzIyCWtYocF01PbGGp1qElJuxv9J4whdWBRtzZltWn"></script>
+  </html>
