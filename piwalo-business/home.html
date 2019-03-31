@@ -91,6 +91,38 @@
           >
             <h3 class="f6 ttu tracked bn bw2 b--pink">Today</h3>
             <div class="cf">
+                <dd class="f5 lh-copy ml0 mt0-ns mb3 w-100 w-50-m w-30-l">
+                    <form class="pv2">
+                      <fieldset id="tier" class="bn ml0 pl0 shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba br1 pa2 pa4-ns mb3">
+                        <!-- <legend class="fw7 mb2">Favorite Movies</legend> -->
+                        <div class="flex items-center mb2">
+                          <input class="mr2" type="radio" id="tier-1" value="tier-1" disabled="">
+                          <label for="tier-1" class="lh-copy"><span class="b">10 people</span> - €15 per person</label>
+                        </div>
+                        <aside class="mr4 mw6-l">
+                          <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                            <div class="bg-pink br-pill h1 shadow-1 w-100"></div>
+                          </div>
+                        </aside>
+                        <div class="flex items-center mb2">
+                          <input class="mr2" type="radio" id="tier-2" value="tier-2" checked="">
+                          <label for="tier-2" class="lh-copy"><span class="b">20 people</span> - €10 per person</label>
+                        </div>
+                        <aside class="mr4 mw6-l">
+                          <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                            <div class="bg-pink br-pill h1 shadow-1 w-75"></div>
+                          </div>
+                        </aside>
+                        <div class="flex items-center mb2">
+                          <input class="mr2" type="radio" id="tier-3" value="tier-3" disabled="">
+                          <label for="tier-3" class="lh-copy"><span class="b">30 people</span> - €8 per person</label>
+                        </div>
+                        <aside class="mr4 mw6-l">
+                          <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">                    </div>
+                        </aside>
+                      </fieldset>
+                    </form>
+                  </dd>
               <dl class="db dib-l w-auto-l lh-title mr6-l">
                 <dd class="f6 fw4 ml0">Offers Running</dd>
                 <dd class="f2 f-subheadline-l fw6 ml0">
@@ -206,7 +238,7 @@
           </article>
         </div>
       </section>
-      <div etta-include="footer.html"></div>
+      <footer class="bg-white navy ph3 ph5-ns pv5 pv6-ns bt b--black-10" etta-include="footer.html"></footer>
     </main>
 
     <script src="../etta/js/e-include.js"></script>
