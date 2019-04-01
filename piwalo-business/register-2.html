@@ -28,24 +28,28 @@
       
         <span class="f6 no-underline navy pv2 db tc">Step 2 of 5 </span>
         <h1 class="tc f4 bold mb4">
-          <span class="bb bw2 b--pink lh-copy">Preferences</span>
+          <span class="bb bw2 b--pink lh-copy">Business details</span>
         </h1>
 
         <form action="register-3.html" method="get" accept-charset="utf-8">
           <fieldset id="sign_up" class="ba b--transparent ph0 mh0 navy">
             <legend class="ph0 mh0 fw6 clip">Register Step 2: Account Preferences</legend>
             <div class="measure mb3 f6 f5-ns">
-              <label for="name" class="b db mb2">Name
-                <span class="normal black-60">(optional)</span>
+              <label for="name" class="b db mb2">Business name
               </label>
               <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text"
-                aria-describedby="name-desc" placeholder="First or full name">
-              <span id="name-desc" class="f6 tl black-70 db mv3 lh-copy">Some people like to be recognised for their
-                ideas, others don't. You'll be known as Anonymous if you leave
-                this blank.</span>
+                aria-describedby="name-desc" placeholder="Business name" required>
+              <span id="name-desc" class="f6 tl black-70 db mv3 lh-copy">Stuck? just use your own name!</span>
             </div>
             <div class="measure mb3 f6 f5-ns">
-              <label for="name" class="b db mb2">Profile picture
+              <label for="description" class="b db mb2">Description
+              </label>
+              <textarea id="description" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text"
+                aria-describedby="business-desc" placeholder="How would you describe your business?" required></textarea>
+              <span id="business-desc" class="f6 tl black-70 db mv3 lh-copy">For example:</span>
+            </div>
+            <div class="measure mb3 f6 f5-ns">
+              <label for="name" class="b db mb2">Business logo
                 <span class="normal black-60">(optional)</span>
               </label>
               <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="file"
@@ -56,7 +60,7 @@
             <div class="measure mb3 f6 f5-ns">
               <label for="location" class="b db mb2">Location</label>
               <input class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text"
-                placeholder="Set your location" value="Use current location" name="location" id="location" required>
+                placeholder="Set your location" value="Use current location or type address" name="location" id="location" required>
               <span id="location-desc" class="f6 tl black-70 db mv3 lh-copy">We ask for access to your location so that
                 can that you only see offers relevant to your area, which helps
                 both you and local businesses. </a>
@@ -66,11 +70,8 @@
               <label for="location-radius" class="b db mb2">Location radius</label>
               <input type="range" min="5" max="25" step="5" value="10"
                 class="slider w-100 h1 h2-ns br2 ba b--navy bg-white outline-0" id="radius-slider">
-              <span id="location-radius-desc" class="f6 tl black-70 db mv3 lh-copy">You will see offers
-                <span class="b bb b--green">up to
-                  <span id="radius"></span>km away</span>. Don't worry, you won't see group offers or services from
-                businesses that don't
-                cover your area! </a>
+              <span id="location-radius-desc" class="f6 tl black-70 db mv3 lh-copy">Potential customers from <span class="b bb b--green">up to
+                  <span id="radius"></span>km away</span> will see your offerings. If you don't cover their area, you won't appear in their suggestions. </a>
               </span>
             </div>
           </fieldset>

@@ -28,7 +28,7 @@
        
         <span class="f6 no-underline navy pv2 db tc">Step 5 of 5 </span>
         <h1 class="tc f4 bold mb4">
-          <span class="bb bw2 b--pink lh-copy">Card details</span>
+          <span class="bb bw2 b--pink lh-copy">Billing</span>
         </h1>
 
         <form action="register-4.html" method="get" accept-charset="utf-8">
@@ -72,7 +72,52 @@
               <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="text"
                 aria-describedby="name-desc" placeholder="Ms. Full Name">
             </div>
+
+            <div class="measure mb3 f6 f5-ns">
+              <label for="name" class="b tc db mb2"> Plan
+                <span class="normal black-60"></span>
+              </label>
+
+                  <div class="flex justify-center dt border-box w-90">
+                      <fieldset id="billing-tier" class="bn">
+                        <!-- <legend class="fw7 mb2">Favorite Movies</legend> -->
+                        <div class="flex items-center ma2">
+                          <input class="ma2" type="radio" name="plan" id="explore" value="explore">
+                          <label for="explore" class="lh-copy">
+                            <a
+                            class="f7 f6-ns fw7 no-underline dib dtc v-mid navy ba b--black-60 br1 pa2 pa3-ns mb3 w-30 mr2 tc ttu">
+                            <span class="center tc">
+                              <i data-feather="compass" class="f6 f5-ns db v-mid center mb3"></i> Explore</span>
+                          </a>
+                          </label>
+                        
+                          <input class="ma2" type="radio" name="plan"  id="freelancer" value="freelancer">
+                          <label for="freelancer" class="lh-copy">
+                              <a
+                              class="f7 f6-ns fw7 no-underline dib dtc v-mid navy ba b--black-60 br1 pa2 pa3-ns mb3 w-30 mr2 tc ttu">
+                              <span class="center tc">
+                                <i data-feather="user" class="f6 f5-ns db v-mid center mb3"></i> Freelancer </span>
+                            </a>
+                          </label>
+
+                          <input class="ma2" type="radio" name="plan"  id="enterprise" value="enterprise">
+                          <label for="enterprise" class="lh-copy">
+                              <a
+                              class="f7 f6-ns fw7 no-underline dib dtc v-mid navy ba b--black-60 br1 pa2 pa3-ns mb3 w-30 mr2 tc ttu">
+                              <span class="center tc">
+                                <i data-feather="users" class="f6 f5-ns db v-mid center mb3"></i> Enterprise </span>
+                            </a>
+                          </label>
+                        </div>
+                      </fieldset>
+              </div>
+              <span id="explore-desc" class="f6 tl black-70 db mv3 lh-copy"><span class="b">Explore plan</span> are for people who like to be recognised for their ideas. Your first name will be displayed, and a profile showing your ideas and funds, contributions to the community!</span>
+              <span id="freelancer-desc" class="f6 tl black-70 db mv3 lh-copy"><span class="b">Freelancer plan</span> are for those who don't. Your initials will be displayed and your profile will only be visible to you. </span>
+              <span id="enterprise-desc" class="f6 tl black-70 db mv3 lh-copy"><span class="b">Local enterprise plan</span> are for those who don't. Your initials will be displayed and your profile will only be visible to you. </span>
+
+            </div>
           </fieldset>
+        </form>
 
           <a class="shadow tc f7 f6-ns fw7 no-underline dib v-mid bg-white navy ba b--navy br-pill ph4 pv2 mv3"
             href="register-4.html">
@@ -80,14 +125,14 @@
           </a>
           <a class="shadow tc f7 f6-ns fw7 grow no-underline dib v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3"
             href="home.html">
-            Finish
+            Dashboard
             <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
           </a>
 
-
+<!-- 
           <a class="db tc f7 f6-ns dib v-mid navy ph4 pv2 mv3" href="home.html">
             Skip for now
-          </a>
+          </a> -->
 
         </form>
 
