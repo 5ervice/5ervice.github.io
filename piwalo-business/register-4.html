@@ -28,94 +28,70 @@
        
         <span class="f6 no-underline navy pv2 db tc">Step 4 of 5 </span>
         <h1 class="f4 bold tc mb4">
-          <span class="bb bw2 b--pink lh-copy">Local businesses based on your interests:</span>
+          <span class="bb bw2 b--pink lh-copy">Member type</span>
         </h1>
 
-        <article class="dt w-100 bb b--black-05 pv2 mv2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="../etta/assets/vendor-avatar.png" class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns" />
-          </div>
-          <div class="dtc v-mid pl3 tl">
-            <h1 class="f6 f5-ns fw6 lh-title mv0">Vendor name</h1>
-            <h2 class="f6 fw4 mt0 mb0 black-70">4 services, 3 group offers</h2>
-          </div>
-          <div class="dtc v-mid">
-            <div class="w-100 tr fr">
-              <a onclick="select()" class="f6 button-reset bg-white bn navy dim pointer pv1 black-60" id="follow">
-                <i id="cta" data-feather="plus-circle" class="f6 f5-ns v-mid"></i>
-                <span class="dn dib-ns">Follow</span>
-              </a>
-              <a id="following" class="dn f6 i button-reset bg-white bn navy pointer pv1 black-60">Following</a>
-            </div>
-          </div>
-        </article>
+        <form action="register-4.html" method="get" accept-charset="utf-8">
+          <fieldset id="billing-tier" class="tl ba b--transparent ph0 mh0 navy">
+            <legend class="ph0 mh0 fw6 clip">Register Step 4: Member Subscription</legend>
 
-        <article class="dt w-100 bb b--black-05 pv2 mv2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="../etta/assets/vendor-avatar.png" class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns" />
-          </div>
-          <div class="dtc v-mid pl3 tl">
-            <h1 class="f6 f5-ns fw6 lh-title mv0">Vendor name</h1>
-            <h2 class="f6 fw4 mt0 mb0 black-70">2 services</h2>
-          </div>
-          <div class="dtc v-mid">
-            <div class="w-100 tr fr">
-              <a class="f6 button-reset bg-white bn navy pv1 black-60">
-                <i data-feather="plus-circle" class="f6 f5-ns v-mid"></i>
-                <span class="dn dib-ns">Follow</span>
-              </a>
-            </div>
-          </div>
-        </article>
+                      
 
-        <article class="dt w-100 bb b--black-05 pv2 mv2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="../etta/assets/vendor-avatar.png" class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns" />
-          </div>
-          <div class="dtc v-mid pl3 tl">
-            <h1 class="f6 f5-ns fw6 lh-title mv0">Vendor name</h1>
-            <h2 class="f6 fw4 mt0 mb0 black-70">1 service, 3 group offers</h2>
-          </div>
-          <div class="dtc v-mid">
-            <div class="w-100 tr fr">
-              <a class="f6 button-reset bg-white bn navy pv1 black-60">
-                <i data-feather="plus-circle" class="f6 f5-ns v-mid"></i>
-                <span class="dn dib-ns">Follow</span>
-              </a>
-            </div>
-          </div>
-        </article>
+                         
+                           
+                          </label>
 
-        <article class="dt w-100 bb b--black-05 pb2 mt2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="../etta/assets/vendor-avatar.png" class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns" />
-          </div>
-          <div class="dtc v-mid pl3 tl">
-            <h1 class="f6 f5-ns fw6 lh-title mv0">Vendor name</h1>
-            <h2 class="f6 fw4 mt0 mb0 black-70">5 services, 5 group offers</h2>
-          </div>
-          <div class="dtc v-mid">
-            <div class="w-100 tr fr">
-              <span class="f6 i button-reset bg-white bn navy pointer pv1 black-60">Following</span>
-            </div>
-          </div>
-        </article>
+              <span id="explore-desc" class="f6 tl black-70 db mv3 lh-copy">
+              
+                <i data-feather="compass" class=" db v-mid center mb3 tc"></i>
+                <input class="ma1" type="radio" name="plan" id="explore" value="explore" checked>
+                <label for="enterprise" class="lh-copy">
+                <span class="b">Explore plan</span> offers a 2 month trial free trial, allowing you to associate with up to 5 ideas
+                but must upgrade to
+                develop more than 1, as well as offer 2 concurrent services of their own. Your first name will be displayed, and a
+                profile showing your ideas and funds, contributions to the community!
+                </label>
 
-        <span class="f6 no-underline navy pv2 db tc mv3">
-          <span class="dib dn-ns">Tap</span>
-          <span class="dn dib-ns">Click</span> on a vendor to follow them - you'll be alerted as soon as they announce a
-          new offer or service. You
-          can change these at any time. </span>
+              </span>
+       
+
+              <span id="freelancer-desc" class="f6 tl black-70 db mv3 lh-copy">
+              
+                <i data-feather="user" class=" db v-mid center mb3 tc"></i>
+                <input class="ma1" type="radio" name="plan"  id="freelancer" value="freelancer">
+                <label for="freelancer" class="lh-copy">
+                <span class="b">Freelancer plan</span> can associate with an unlimited amount of communitycontributed ideas, develop
+                up to 4, as well as offer 3 of their own concurrent
+                services <price class="i mh2">15 pm 150 py two months free</price>
+                </label>
+              </span>
+
+              <span id="enterprise-desc" class="f6 tl black-70 db mv3 lh-copy">
+              
+                <i data-feather="users" class=" db v-mid center mb3 tc"></i>
+                <input class="ma1" type="radio" name="plan"  id="enterprise" value="enterprise">
+                <label for="freelancer" class="lh-copy">
+                <span class="b">Local enterprise plan</span> can associate with develop an unlimited amount of
+                community-contributed ideas, as well as offer 5 of their own concurrent
+                services
+                <price class="i mh2">35pm 350 py two months free</price>
+                </label>
+              </span>
+
+            </fieldset>
+
+        </form>
+        <aside class="mw6 center tc">
         <a class="shadow tc f7 f6-ns fw7 no-underline dib v-mid bg-white navy ba b--navy br-pill ph4 pv2 mv3"
-          href="register-3.html">
-          <i data-feather="chevron-left" class="f6 f5-ns v-mid"></i> Back
-        </a>
-        <a class="shadow grow tc f7 f6-ns fw7 no-underline dib v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3"
-          href="register-5.html">
-          Continue
-          <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
-        </a>
-      </article>
+        href="register-3.html">
+        <i data-feather="chevron-left" class="f6 f5-ns v-mid"></i> Back
+      </a>
+      <a class="shadow grow tc f7 f6-ns fw7 no-underline dib v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3"
+        href="register-5.html">
+        Continue
+        <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
+    </a>
+    </aside>
 
     </div>
   </section>
