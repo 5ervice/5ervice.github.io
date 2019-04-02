@@ -30,57 +30,66 @@
         <h1 class="f4 bold tc mb4">
           <span class="bb bw2 b--pink lh-copy">Member type</span>
         </h1>
-
+       
         <form action="register-4.html" method="get" accept-charset="utf-8">
           <fieldset id="billing-tier" class="tl ba b--transparent ph0 mh0 navy">
             <legend class="ph0 mh0 fw6 clip">Register Step 4: Member Subscription</legend>
 
-                      
-
-                         
-                           
-                          </label>
-
-              <span id="explore-desc" class="f6 tl black-70 db mv3 lh-copy">
+              <span id="explore-desc" class="ba shadow f6 tl black-70 db mv3 pv3 lh-copy">
+                <i data-feather="compass" class=" db v-mid center mbt3 mb1 tc"></i>
+                <span class="b center tc db mb2"> Explore </span>
+                <price class="f7 i mh2 center tc db mb3">FREE TRIAL (2 months)</price>
               
-                <i data-feather="compass" class=" db v-mid center mb3 tc"></i>
-                <input class="ma1" type="radio" name="plan" id="explore" value="explore" checked>
-                <label for="enterprise" class="lh-copy">
-                <span class="b">Explore plan</span> offers a 2 month trial free trial, allowing you to associate with up to 5 ideas
-                but must upgrade to
-                develop more than 1, as well as offer 2 concurrent services of their own. Your first name will be displayed, and a
-                profile showing your ideas and funds, contributions to the community!
+                <input class="ma1 db center" type="radio" name="plan" id="explore" value="explore">
+                <label for="explore" class="lh-copy">
+                  <ul class="pa4 ma0 list">
+                    <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">up to 5 pitches</li>
+                    <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">make 1 offer to the community</li>
+                    <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">develop 1 offer of your own</li>
+                    <li class="lh-copy pv3 bn bl-0 bt-0 br-0 b--dotted b--black-30">public profile</li>
+                  </ul>
                 </label>
-
               </span>
        
 
-              <span id="freelancer-desc" class="f6 tl black-70 db mv3 lh-copy">
-              
-                <i data-feather="user" class=" db v-mid center mb3 tc"></i>
-                <input class="ma1" type="radio" name="plan"  id="freelancer" value="freelancer">
+              <span id="freelancer-desc" class="ba shadow f6 tl black-70 db mv3 pv3 lh-copy">
+                <i data-feather="user" class=" db v-mid center mb1 tc"></i>
+                <span class="b center tc db mb2"> Freelancer </span>
+                <price class="f7 i mh2 center tc db mb3">&euro;15 per month  or &euro;150 per year</price>
+
+                <input class="ma1 db center" type="radio" name="plan" id="freelancer" value="freelancer">
                 <label for="freelancer" class="lh-copy">
-                <span class="b">Freelancer plan</span> can associate with an unlimited amount of communitycontributed ideas, develop
-                up to 4, as well as offer 3 of their own concurrent
-                services <price class="i mh2">15 pm 150 py two months free</price>
+                  <ul class="pa4 ma0 list">
+                      <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">make unlimited pitches to the community</li>
+                      <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">develop 3 offers of your own</li>
+                      <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">fund up to 3 offers at one time</li>
+                      <li class="lh-copy pv3 bn bl-0 bt-0 br-0 b--dotted b--black-30">public profile</li>
+                  </ul>
                 </label>
               </span>
 
-              <span id="enterprise-desc" class="f6 tl black-70 db mv3 lh-copy">
-              
-                <i data-feather="users" class=" db v-mid center mb3 tc"></i>
-                <input class="ma1" type="radio" name="plan"  id="enterprise" value="enterprise">
-                <label for="freelancer" class="lh-copy">
-                <span class="b">Local enterprise plan</span> can associate with develop an unlimited amount of
-                community-contributed ideas, as well as offer 5 of their own concurrent
-                services
-                <price class="i mh2">35pm 350 py two months free</price>
+              <span id="enterprise-desc" class="ba shadow f6 tl black-70 db mv3 pv3 lh-copy">
+                <i data-feather="users" class=" db v-mid center mb1 tc"></i>
+                <span class="b center tc db mb2"> Enterprise </span>
+                <price class="f7 i mh2 center tc db mb3">&euro;35 per month or &euro;350 per year</price>
+
+                <input class="ma1 db center" type="radio" name="plan" id="enterprise" value="enterprise">
+                <label for="enterprise" class="lh-copy">
+                  <ul class="pa4 ma0 list">
+                      <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">make unlimited pitches to the community</li>
+                      <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">develop an unlimited amount of offers</li>
+                      <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">fund an unlimited amount of offers at one time</li>
+                      <li class="lh-copy pv3 bn bl-0 bt-0 br-0 b--dotted b--black-30">public profile</li>
+                    </ul>
                 </label>
               </span>
-
             </fieldset>
 
         </form>
+        <div class="measure mb4 f6 f5-ns">
+          <span id="name-desc" class="f6 tl black-70 db mv3 lh-copy">Piwalo offers three levels of business membership. You can <a href="upgrade.html" class="navy" target="_blank">upgrade
+              </a> at any time.</span>
+        </div>
         <aside class="mw6 center tc">
         <a class="shadow tc f7 f6-ns fw7 no-underline dib v-mid bg-white navy ba b--navy br-pill ph4 pv2 mv3"
         href="register-3.html">
@@ -88,7 +97,7 @@
       </a>
       <a class="shadow grow tc f7 f6-ns fw7 no-underline dib v-mid bg-navy white ba b--navy br-pill ph4 pv2 mv3"
         href="register-5.html">
-        Continue
+        Billing
         <i data-feather="chevron-right" class="f6 f5-ns v-mid"></i>
     </a>
     </aside>
