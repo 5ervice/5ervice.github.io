@@ -25,8 +25,8 @@
     <div etta-include="side-nav.html"></div>
 
     <main id="main" onclick="closeNav()">
-      <section class="ph3 ph5-l dt w-100 vh-100 pv3 fade">
-        <div class="dtc v-mid mv4 pv4 ph3 mw9 center">
+      <section class="ph2 ph3-ns ph5-l dt w-100 vh-100 pv3 fade">
+        <div class="dtc v-mid mv4 pv4 ph3-ns mw9 center">
 
               <div class="db mw8 tc center f7 f6-m f5-l mt5 mb2 pa0">
                 <a class="o-80 w-20 link dim navy dib b" href="search-results.html" title="Back to Search Results">
@@ -35,7 +35,10 @@
                 <a class="o-80 w-20 link dim navy dib b" href="search-results.html" title="Back to Search Results">
                     <i data-feather="chevron-left" class="f1 dib v-mid center ma1 ma2-ns"></i> <span class="dn dib-ns">Last</span> week
                 </a>
-                <span id="date" class="mh3 ttc i tracked">Week </span>
+                <a class="link navy" href="profile.html" title="Go to Vendor page">
+                  <img src="../etta/assets/vendor-avatar-2.png" class="dib w2 h2 br-100 v-mid" alt="Vendor logo" />
+                  <a class="link navy truncate mt2 mt0-ns" href="profile.html">Michael</a>
+                </a>
                 <a class="o-80 w-20 link dim navy dib b" href="search-results.html" title="Back to Search Results">
                   <span class="dn dib-ns">Next week </span> <i data-feather="chevron-right" class="f1 dib v-mid center ma1 ma2-ns"></i></a>
                 <a class="o-80 w-20 link dim navy dib b" href="search-results.html" title="Back to Search Results">
@@ -48,10 +51,10 @@
         >
           <!-- <h3 class="f6 ttu tracked bn bw2 b--pink">Today</h3> -->
           <h3 class="f5 f3-ns mt0 pt3 pt4-ns pb2 tc lh-copy">
-              <span class="pb1 bb bw2 b--pink">Today</span>
+              <span id="date" class="pb1 bb bw2 b--pink">Today</span>
             </h3>
 
-            <span id="dateHeader" class="mw4 center db tc f6 pv2 ttu tracked ba" style="transform: rotate(-2deg);">Date</span>
+            <!-- <span id="dateHeader" class="mw4 center db tc f6 pv2 ttu tracked i">Today</span> -->
 
               <!-- <aside class="mv4"> -->
                   <section class="tc mv4 mw6-l center" id="filter" etta-include="filter-stats.html"></section>
@@ -239,7 +242,7 @@
 
       dateBlock.innerHTML = "Week " + weekNumber;
 
-      var dd = today.getDate() + 1;
+      var dd = today.getDate();
       var mm = today.getMonth() + 1;
 
       var yyyy = today.getFullYear();
