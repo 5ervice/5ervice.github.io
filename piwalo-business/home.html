@@ -35,10 +35,7 @@
                 <a class="o-80 mw5 link dim navy dib b" href="#0" title="Last week">
                     <i data-feather="chevron-left" class="f1 dib v-mid center ma1 mh2-l"></i> <span class="dib">Last week</span>
                 </a>
-                <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph2 ph3-ns pv2 mv2 mh1"" href="profile.html" title="Go to Profile">
-                  <img src="../etta/assets/vendor-avatar-2.png" class="dib w2 h2 br-100 v-mid" alt="Vendor logo" />
-                  <span class="link navy truncate mt2 mt0-ns">Michael</a>
-                </a>
+                <span id="date" class="tc no-underline w-auto dim dib v-mid navy ph2 ph3-ns pv2 mv2 mh1"></span>
                 <a class="o-80 mw5 link dim navy dib b" href="#0" title="Next week">
                   <span class="dib">Next week </span> <i data-feather="chevron-right" class="f1 dib v-mid center ma1 mh2-l"></i></a>
                 <a class="o-80 mw5 link dim navy dib b" href="#0" title="Next month">
@@ -49,25 +46,28 @@
           class="pa3 pa5-ns tl v-mid navy ba b--black-60 br2 mb5 mh3"
           data-name="vendor-stat-today"
         >
-          <!-- <h3 class="f6 ttu tracked bn bw2 b--pink">Today</h3> -->
+
           <h3 class="f5 f3-ns mt0 pt3 pt4-ns pb2 tc lh-copy">
-              <span id="date" class="pb1 bb bw2 b--pink">Today</span>
+              <span id="dateHeader" class="pb1 bb bw2 b--pink">Today</span>
             </h3>
 
             <!-- <span id="dateHeader" class="mw4 center db tc f6 pv2 ttu tracked i">Today</span> -->
  
               <!-- <aside class="mv4"> -->
-                  <section class="tc mv4 mw6-l center" id="filter" etta-include="filter-stats.html"></section>
+                  <section class="tc mv3 mw6-l center" id="filter" etta-include="filter-stats.html"></section>
                   <!-- </aside> -->
           <div class="cf">
-            <dl class="db mw9 center">
+            <dl class="db mw9 center flex items-center flex-column flex-row-l">
               <dd class="f5 lh-copy ma2 w-100 w-30-l dib">
                   <form class="pv2">
                     <fieldset id="tier" class="ml0 pl0 shadow f7 f6-ns fw7 no-underline grow dib dtc v-mid navy ba b--black-60 b--dashed br1 pa2 ph3 pa3-m pa4-l mb3">
-                      <legend class="fw7 mb2 ttu tracked"> <i data-feather="feather" class="f1 dib v-mid center ma2"></i> Pitches</legend>
+                      <legend class="fw7 mb2 ttu tracked"> <i data-feather="briefcase" class="f1 dib v-mid center ma2"></i> In Review</legend>
                       <div class="flex items-center mb2">
                         <!-- <input class="mr2" type="radio" id="tier-1" value="tier-1" disabled=""> -->
-                        <label for="tier-1" class="lh-copy"><span class="b bb">Personal Grocery Shopper</span> - €15 per person</label>
+                        <label for="tier-1" class="lh-copy">
+                          <a href="pitch-single.html" class="navy link b bb">Personal Grocery Shopper</a> 
+                          <div class="v-mid dib pv1 ph2 ma1 fw4 f7 ttu tracked blue ba">Open call</div>
+                        </label>
                       </div>
                       <aside class="mr4 mw6-l">
                         <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
@@ -76,7 +76,17 @@
                       </aside>
                       <div class="flex items-center mb2">
                         <!-- <input class="mr2" type="radio" id="tier-2" value="tier-2" checked=""> -->
-                        <label for="tier-2" class="lh-copy"><span class="b bb">Personal Grocery Shopper</span> - €10 per person</label>
+                        <label for="tier-2" class="lh-copy">
+                          <a href="pitch-single.html" class="navy link b bb">Personal Grocery Shopper</a> 
+                           <!-- <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked blue ba">Open call</div> -->
+        <!-- <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked green ba">Seeking support</div> -->
+        <!-- <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked yellow ba" title="No activity in the past X months">Stale</div> -->
+        <!-- <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked green ba">Accepted</div> -->
+        <!-- <div class="dib pv1 ph2 mb1 fw4 f7 ttu tracked pink ba v-mid">
+            Seeking funding
+          </div> -->
+                          <div class="v-mid dib pv1 ph2 ma1 fw4 f7 ttu tracked blue ba">Open call</div>
+                        </label>
                       </div>
                       <aside class="mr4 mw6-l">
                         <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
@@ -85,7 +95,10 @@
                       </aside>
                       <div class="flex items-center mb2">
                         <!-- <input class="mr2" type="radio" id="tier-3" value="tier-3" disabled=""> -->
-                        <label for="tier-3" class="lh-copy"><span class="b bb">Personal Grocery Shopper</span> - €8 per person</label>
+                        <label for="tier-3" class="lh-copy">
+                            <a href="pitch-single.html" class="navy link b bb">Personal Grocery Shopper</a>
+                            <div class="v-mid dib pv1 ph2 ma1 fw4 f7 ttu tracked yellow ba">Stale</div>
+                        </label>
                       </div>
                       <aside class="mr4 mw6-l">
                         <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
@@ -94,7 +107,10 @@
                       </aside>
                       <div class="flex items-center mb2">
                           <!-- <input class="mr2" type="radio" id="tier-2" value="tier-2" checked=""> -->
-                          <label for="tier-2" class="lh-copy"><span class="b bb">Personal Grocery Shopper</span> - €10 per person</label>
+                          <label for="tier-2" class="lh-copy">
+                              <a href="pitch-single.html" class="navy link b bb">Personal Grocery Shopper</a> 
+                              <!-- <div class="v-mid dib pv1 ph2 ma1 fw4 f7 ttu tracked blue ba">Open call</div> -->
+                          </label>
                         </div>
                         <aside class="mr4 mw6-l">
                           <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
@@ -103,11 +119,14 @@
                         </aside>
                         <div class="flex items-center mb2">
                             <!-- <input class="mr2" type="radio" id="tier-2" value="tier-2" checked=""> -->
-                            <label for="tier-2" class="lh-copy"><span class="b bb">Personal Grocery Shopper</span> - €10 per person</label>
+                            <label for="tier-2" class="lh-copy">
+                                <a href="pitch-single.html" class="navy link b bb">Personal Grocery Shopper</a>
+                                <!-- <div class="v-mid dib pv1 ph2 ma1 fw4 f7 ttu tracked blue ba">Open call</div> -->
+                            </label>
                           </div>
                           <aside class="mr4 mw6-l">
                             <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
-                              <div class="bg-navy br-pill h1 shadow-1 w-75"></div>
+                              <!-- <div class="bg-navy br-pill h1 shadow-1 w-75"></div> -->
                             </div>
                           </aside>
                     </fieldset>
@@ -174,13 +193,13 @@
                   </dl>
             <dl class="db dib-l w-auto-l lh-title mr6-l">
               <dd class="f6 fw4 ml0">Offers Running</dd>
-              <dd class="f2 f1-l fw6 ml0">
-                  <i data-feather="truck" class="w2 h2 w3-l h3-l dib v-mid center ma2"></i> <a href="services.html" class="link navy bb bw2 b--pink">6</a>
+              <dd class="f3 f2-l fw6 ml0">
+                  <i data-feather="truck" class="w2 h2 dib v-mid center ma2"></i> <a href="services.html" class="link navy bb bw2 b--pink">6</a>
               </dd>
             </dl>
             <dl class="db dib-l w-auto-l lh-title mr6-l">
               <dd class="f6 fw4 ml0">New Responses</dd>
-              <dd class="f2 f1-l fw6 ml0">
+              <dd class="f3 f2-l fw6 ml0">
                 <a href="stats.html" class="link navy bb bw2 b--pink">
                   <i
                     data-feather="arrow-down-left"
@@ -192,7 +211,7 @@
             </dl>
             <dl class="db dib-l w-auto-l lh-title mr6-l">
               <dd class="f6 fw4 ml0">Sign-ups</dd>
-              <dd class="f2 f1-l fw6 ml0">
+              <dd class="f3 f2-l fw6 ml0">
                 78
 
                 <a href="stats.html" class="link navy bb bw2 b--pink">
@@ -209,7 +228,7 @@
             </dl> -->
             <dl class="db dib-l w-auto-l lh-title mr6-l">
               <dd class="f6 fw4 ml0">Most Popular Service</dd>
-              <dd class="f2 f1-l fw6 ml0">
+              <dd class="f3 f2-l fw6 ml0">
                 <a href="offer-single.html" class="link navy bb bw2 b--green"
                   >Personal Grocery Shopper</a
                 >
@@ -217,7 +236,7 @@
             </dl>
             <dl class="db dib-l w-auto-l lh-title">
               <dd class="f6 fw4 ml0">Expires today</dd>
-              <dd class="f2 f1-l fw6 ml0">
+              <dd class="f3 f2-l fw6 ml0">
                 <a href="fund-single.html" class="link navy bb bw2 b--pink"
                   >Pressure Washer Services</a
                 >
@@ -241,8 +260,8 @@
     <script>
       injectComponents();
 
-      var dateBlock = document.getElementById("date");
-      var dateHeader = document.getElementById("dateHeader");
+      var eWeek = document.getElementById("date");
+      var eDate = document.getElementById("dateHeader");
 
       Date.prototype.getWeek = function () {
         var onejan = new Date(this.getFullYear(), 0, 1);
@@ -254,24 +273,28 @@
       var weekNumber = today.getWeek();
       console.log(weekNumber); // Returns the week number as an integer
 
-      dateBlock.innerHTML = "Week " + weekNumber;
+      eWeek.innerHTML = "Week " + weekNumber;
 
+      var dString = today.getDay();
       var dd = today.getDate();
-      var mm = today.getMonth() + 1;
+      var mm = today.getMonth();
 
       var yyyy = today.getFullYear();
 
       if (dd < 10) {
         dd = '0' + dd;
       }
-      if (mm < 10) {
-        mm = '0' + mm;
-      }
+      // if (mm < 10) {
+      //   mm = '0' + mm;
+      // }
 
-      today = dd + '/' + mm + '/' + yyyy;
+      var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+      console.log(months[mm]);
+      today = days[dString] + " " + dd + ' ' + months[mm] + ' ' + yyyy;
 
-      dateHeader.innerHTML = today;
+      eDate.innerHTML = today;
     </script>
   <script src="//instant.page/1.2.1" type="module" integrity="sha384-/IkE5iZAM/RxPto8B0nvKlMzIyCWtYocF01PbGGp1qElJuxv9J4whdWBRtzZltWn"></script>
   </html>
