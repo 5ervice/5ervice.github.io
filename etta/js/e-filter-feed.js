@@ -20,7 +20,7 @@ function showPitches(){
     p.classList.remove("dn");
     p.classList.add("db");
 
-    hideAll();
+    if(a != undefined){ hideAll(); }
     hideOffers();
     hideFunds();
 }
@@ -29,7 +29,7 @@ function showOffers(){
     o.classList.remove("dn");
     o.classList.add("db");
 
-    hideAll();
+    if(a != undefined){hideAll();}
     hidePitches();
     hideFunds();
 }
@@ -38,7 +38,7 @@ function showFunds(){
     f.classList.remove("dn");
     f.classList.add("db");
 
-    hideAll();
+    if(a != undefined){hideAll();}
     hidePitches();
     hideOffers();
 }
