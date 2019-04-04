@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" href="../etta/assets/favicon-business.png" />
     <style>
       @import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700,900);
+      .rx-180{ transform: rotateX(180deg); }
     </style>
   </head>
 
@@ -28,14 +29,14 @@
       <section class="ph2 ph3-ns ph5-l dt w-100 vh-100 pv3 fade">
         <div class="dtc v-mid mv4 pv4 ph3-ns mw9 center">
 
-              <div class="db mw8 center tc f7 f5-m f6-l mt5 mb2 pa0">
+              <div class="db mw8 center tc f7 f5-m f6-l mt3 mt4-ns mb2 pa0">
                 <a class="o-80 mw5 link dim navy dib b ph4-l" href="#0" title="Last month">
                     <i data-feather="skip-back" class="f1 dib v-mid center ma1 mr2-l"></i> <span class="dn dib-ns">Last month</span>
                 </a>
                 <a class="o-80 mw5 link dim navy dib b ph4-l" href="#0" title="Last week">
                     <i data-feather="chevron-left" class="f1 dib v-mid center ma1 mh2-l"></i> <span class="dib">Last week</span>
                 </a>
-                <span id="date" class="f5 i tc no-underline w-auto dib v-mid navy ph2 ph3-ns pv2 mv2 mh1"></span>
+                <span id="date" class="f5 ttu tc no-underline w-auto dib v-mid navy ph2 ph3-ns pv2 mv2 mh1"></span>
                 <a class="o-80 mw5 link dim navy dib b ph4-l" href="#0" title="Next week">
                   <span class="dib">Next week </span> <i data-feather="chevron-right" class="f1 dib v-mid center ma1 mh2-l"></i></a>
                 <a class="o-80 mw5 link dim navy dib b ph4-l" href="#0" title="Next month">
@@ -55,7 +56,7 @@
           <div id="feed-pitches" class="cf db fade" etta-include="panel-stats--pitches.html"></div>
           <div id="feed-offers" class="cf dn fade" etta-include="panel-stats--offers.html"></div>
           <div id="feed-funds" class="cf dn fade" etta-include="panel-stats--funds.html"></div>
-            
+
         </article>
         </section>
         </div>
@@ -70,7 +71,6 @@
     <script src="../etta/js/e-nav-active.js"></script>
     <script src="../etta/js/e-side-nav.js"></script>
     <script src="../etta/js/icons.min.js"></script>
-    <script src="../etta/js/siema.min.js"></script>
     <script>
       injectComponents();
 
@@ -87,7 +87,7 @@
       var weekNumber = today.getWeek();
       console.log(weekNumber); // week num as an integer
 
-      eWeek.innerHTML = "Week " + weekNumber;
+      eWeek.innerHTML = '<i data-feather="calendar" class="f1 dib v-mid center ma1 mh2-l"></i>' + "Week " + weekNumber;
 
       var dString = today.getDay();
       var dd = today.getDate();
