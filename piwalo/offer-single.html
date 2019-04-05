@@ -148,7 +148,9 @@
                 I can pick up your groceries from any shop in Clonmel and
                 deliver them to your door.
             </dd>
-            <dt class="f5 b mv3 sans-serif">Media (<span class="js-index"></span>/4)</dt>
+            <dt class="f5 b mv3 sans-serif">Media (<span class="js-index"></span>/4)
+              <span class="normal black-60"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-move v-mid mid-gray"><polyline points="5 9 2 12 5 15"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line></svg></span>
+            </dt>
             <dd class="z-1 cf mv2 mh0 mb4 measure siema">
                 <div class="fl w-100">
                     <div class="aspect-ratio aspect-ratio--7x5 mr2">
@@ -175,6 +177,38 @@
                     </div>
                 </div>
             </dd>
+            <dt class="f5 b mb3 mt4 sans-serif">Pricing tiers</dt>
+            <dd class="f5 lh-copy ml0 mt0-ns mb3 measure">
+              <form class="pv2">
+                <fieldset id="tier" class="bn ml0 pl0">
+                  <div class="flex items-center mb2">
+                    <input class="mr2" type="radio" id="tier-1" value="tier-1" disabled>
+                    <label for="tier-1" class="lh-copy"><span class="b">10 people</span> - €15 per person</label>
+                  </div>
+                  <aside class="mr4 mw6-l">
+                    <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                      <div class="bg-green br-pill h1 shadow-1 w-100"></div>
+                    </div>
+                  </aside>
+                  <div class="flex items-center mb2">
+                    <input class="mr2" type="radio" id="tier-2" value="tier-2" checked>
+                    <label for="tier-2" class="lh-copy"><span class="b">20 people</span> - €10 per person</label>
+                  </div>
+                  <aside class="mr4 mw6-l">
+                    <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">
+                      <div class="bg-green br-pill h1 shadow-1 w-75"></div>
+                    </div>
+                  </aside>
+                  <div class="flex items-center mb2">
+                    <input class="mr2" type="radio" id="tier-3" value="tier-3" disabled>
+                    <label for="tier-3" class="lh-copy"><span class="b">30 people</span> - €8 per person</label>
+                  </div>
+                  <aside class="mr4 mw6-l">
+                    <div class="bg-moon-gray br-pill h1 overflow-y-hidden mh0 mv3 mr4">                    </div>
+                  </aside>
+                </fieldset>
+              </form>
+            </dd>
             <dt class="f5 b mb3 mt4 sans-serif">Terms and Conditions</dt>
             <dd class="f5 lh-copy ml0 mt0-ns mb3 measure">
                 Promotional value expires 180 days after purchase. Amount paid
@@ -196,18 +230,22 @@
         </section>
      
         <aside class="mv4 f7 f6-ns fw7 w-100 sans-serif">
-          <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
+          <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2" onclick="joinView();">
             <i data-feather="check" class="v-mid"></i> Joined
           </a>
           <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2 pointer"
-            onclick="shareView();">
-            <i data-feather="star" class="v-mid"></i> Interested
-          </a>
+          onclick="commentsView();">
+          <i data-feather="message-square" class="v-mid"></i> Discuss
+        </a>
           <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2 pointer"
-            onclick="commentsView();">
-            <i data-feather="message-square" class="v-mid"></i> Comment
+            onclick="shareView();">
+            <i id="heart" data-feather="heart" class="v-mid"></i> Save
           </a>
         </aside>
+        <div id="join-box" class="measure mb3 f6 f5-ns sans-serif dn">
+            <label for="comment" class="b dib mb2">Your order code:</label>
+            <span class="normal black-60">e94rurd8</span>
+          </div>
         <div id="comment-box" class="measure mb3 f6 f5-ns sans-serif dn">
           <label for="comment" class="b dib mb2">Comment</label>
           <span class="normal black-60">(min. 180 characters)</span>
@@ -220,16 +258,7 @@
             <i data-feather="facebook" class="v-mid"></i> Facebook
           </a>
           <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
-            <i data-feather="twitter" class="v-mid"></i> Twitter
-          </a>
-          <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
-            <i data-feather="instagram" class="v-mid"></i> Instagram
-          </a>
-          <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
-            <i data-feather="phone" class="v-mid"></i> SMS
-          </a>
-          <a class="tc bb--w2 no-underline w-auto dim dib v-mid navy ba br2 ph3 pv2 mv2">
-            <i data-feather="check" class="v-mid"></i> Email
+            <i data-feather="copy" class="v-mid"></i> Copy link
           </a>
         </div>
       </div>

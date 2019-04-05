@@ -2,8 +2,11 @@ var details = document.getElementById("details");
 var discussion = document.getElementById("discussion");
 var activity = document.getElementById("activity");
 
+var j = document.getElementById("join-box");
 var c = document.getElementById("comment-box");
 var s = document.getElementById("share-box");
+
+// var h = document.getElementById("heart");
 
 
 function hideDetailsView(){
@@ -49,12 +52,16 @@ function activityView() {
 }
 
 function commentsView(){
-    c.classList.remove("dn");
-    c.classList.add("db");
+    c.classList.toggle("dn");
+    c.classList.toggle("db");
 
 }
 function shareView(){
-    s.classList.remove("dn");
-    s.classList.add("db");
+    s.classList.toggle("dn");
+    s.classList.toggle("db");
 
+}
+function joinView(){
+    j.classList.toggle("dn");
+    j.classList.toggle("db");
 }
