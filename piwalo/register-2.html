@@ -24,7 +24,7 @@
         </a>
         <span class="f6 no-underline navy pv2 db tc">Step 2 of 5 </span>
         <h1 class="tc f4 bold mb4">
-          <span class="bb bw2 b--pink lh-copy">Preferences</span>
+          <span class="bb bw2 b--pink lh-copy">Account</span>
         </h1>
 
         <form action="register-3.html" method="get" accept-charset="utf-8">
@@ -39,10 +39,18 @@
               <span id="name-desc" class="f6 tl black-70 db mv3 lh-copy">...as you would put on a billing address. You can choose how we display your name below.</span>
             </div>
             <div class="measure mb3 f6 f5-ns">
+                <label for="name" class="b db mb2">Mobile number
+                  <span class="normal black-60"></span>
+                </label>
+                <input id="tel" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="tel" aria-describedby="tel"
+                  placeholder="0871234567">
+                <span id="name-desc" class="f6 tl black-70 db mv3 lh-copy">Your booking will be confirmed by SMS.</span>
+              </div>
+            <div class="measure mb3 f6 f5-ns">
               <label for="name" class="b db mb2">Profile picture
                 <span class="normal black-60">(optional)</span>
               </label>
-              <input id="name" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="file" aria-describedby="name-desc">
+              <input id="pp" class="input-reset ba border-box b--navy br2 pa2 mb2 db w-100 measure" type="file" aria-describedby="name-desc">
               <span id="profile-pic" class="f6 tl black-70 db mv3 lh-copy">Your profile picture is visible on public accounts only.</span>
             </div>
             <div class="measure mb3 f6 f5-ns">
@@ -67,14 +75,15 @@
                                 <a
                                 class="f7 f6-ns fw7 no-underline dib dtc v-mid navy ba b--black-60 br1 pa3 pa4-ns mb3 w-50 mr2 tc ttu">
                                 <span class="center tc">
-                                  <i data-feather="lock" class="f6 f5-ns db v-mid center mb3"></i> Private </span>
+                                  <i data-feather="lock" class="f6 f5-ns db v-mid center mb3"></i> Guest </span>
                               </a>
                             </label>
                           </div>
                         </fieldset>
                 </div>
-                <span id="open-desc" class="f6 tl black-70 db mv3 lh-copy"><span class="b">Open accounts</span> are for people who like to be recognised for their ideas. Your first name will be displayed, and a profile showing your ideas and funds, contributions to the community!</span>
-                <span id="private-desc" class="f6 tl black-70 db mv3 lh-copy"><span class="b">Private accounts</span> are for those who don't. Your initials will be displayed and your profile will only be visible to you.
+                <span id="open-desc" class="f6 tl black-70 db mv3 lh-copy"><span class="b">Open mode:</span> In order to build trust between members, Piwalo is open by default. You will have a profile showing your name, pitched ideas, redeemed offers and contributions to the community.</span>
+                <span id="private-desc" class="f6 tl black-70 db mv3 lh-copy"><span class="b">Guest mode:</span> For those exploring Piwalo. You won't be able to add your own pitch, get involved in negotiations 
+                or avail of group offers. Your profile will only be visible to you.
               </div>
             <div class="measure mb3 f6 f5-ns">
               <label for="location" class="b db mb2">Location</label>
@@ -112,7 +121,6 @@
   <footer class="bg-white navy ph3 ph5-ns pv5 pv6-ns bt b--black-10" etta-include="footer.html"></footer>
   <script src="../etta/js/e-include.js"></script>
   <script src="../etta/js/e-slider.js"></script>
-  <!-- <script src="../etta/js/e-side-nav.js"></script> -->
   <script src="../etta/js/icons.min.js"></script>
   <script>
     injectComponents();
